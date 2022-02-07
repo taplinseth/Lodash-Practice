@@ -76,3 +76,25 @@ if (typeof describe === 'function'){
     })
 }
 
+
+
+
+
+// euclidean algorithm
+
+// take in two numbers
+// assign value of the remainder of num1 - num2 to num2
+// stop at remainder 0
+
+
+const findGCD = (num1, num2) => {
+    if (!num2) {
+        return num1;
+    }
+    return findGCD(num2, num1 % num2)
+}
+
+
+
+
+console.log(findGCD(50, 20)); // => 5 findGCD(50, 20) // => 10
